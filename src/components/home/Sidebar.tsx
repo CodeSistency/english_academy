@@ -15,15 +15,17 @@ export function SidebarHome() {
                 <Sidebar.Collapse key={chapter.id} icon={HiArrowSmRight} label={chapter.title}>
                   {chapter.sub_chapters.map((subChapter: any) => (
                     <Sidebar.Item
+                    
                       key={subChapter.id}
                       onClick={() => {
-                        if (!subChapter.isFinished) {
-                          toggleSubChapter(chapter.id, subChapter.id);
+                        if (subChapter.isFinished) {
+                            handleItemClick(subChapter.id)
+                        //   toggleSubChapter(chapter.id, subChapter.id);
                         }
                       }}
                     >
                       {subChapter.isFinished ? (
-                        <>{subChapter.title}</>
+                        <p className={"cursor-pointer"}>{subChapter.title}</p>
                       ) : (
                        <div className="flex items-center gap-2">
                         <p>{subChapter.title}</p>
