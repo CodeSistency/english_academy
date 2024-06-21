@@ -11,7 +11,7 @@ export function SidebarHome() {
 
   return (
     <>
-      <Sidebar aria-label="Sidebar with multi-level dropdown example ">
+      <Sidebar aria-label="Sidebar with multi-level dropdown example " className="h-full">
         {/* Botón de alternancia de modo oscuro */}
 
         <Sidebar.Items>
@@ -28,10 +28,11 @@ export function SidebarHome() {
                     <Sidebar.Item
                       key={subChapter.id}
                       onClick={() => {
-                        if (subChapter.isFinished) {
-                          handleItemClick(subChapter.id);
-                          // toggleSubChapter(chapter.id, subChapter.id);
-                        }
+                        handleItemClick(subChapter.id);
+                        // if (subChapter.isFinished) {
+                        //   handleItemClick(subChapter.id);
+                        //   // toggleSubChapter(chapter.id, subChapter.id);
+                        // }
                       }}
                     >
                       {subChapter.isFinished ? (
