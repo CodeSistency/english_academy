@@ -20,25 +20,25 @@ import VerbToBeQuizz from "@/components/chapters/chapter_3/subchapter_1/VerbToBe
 
 
 function HomeContent() {
-    const {selectedId} = useContext(contextInstance);
+    const { selectedId } = useContext(contextInstance);
 
     switch (selectedId) {
         case 1:
             return <div>Content for Chapter 1</div>;
         case 1.1:
-            return <FamilyCards/>;
+            return <FamilyCards />;
         case 1.2:
             return <BodyCards />;
         case 1.3:
-            return <FoodCards/>;
+            return <FoodCards />;
         case 1.4:
-            return <RoutineCards/>;
+            return <RoutineCards />;
         case 1.5:
             return <HomeCards />;
         case 1.6:
-            return <TimeCards/>;
+            return <TimeCards />;
         case 1.7:
-            return <TravelCards/>;
+            return <TravelCards />;
         case 2:
             return <div>Content for Chapter 2</div>;
         case 2.1:
@@ -50,7 +50,7 @@ function HomeContent() {
         case 3:
             return <div>Content for Chapter 3</div>;
         case 3.1:
-            return <VerbToBeQuizz/>;
+            return <VerbToBeQuizz />;
         default:
             return <div>Select a chapter or subchapter</div>;
     }
