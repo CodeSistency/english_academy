@@ -11,7 +11,7 @@ export function SidebarHome() {
 
   return (
     <>
-      <Sidebar aria-label="Sidebar with multi-level dropdown example " className="h-full">
+      <Sidebar aria-label="Sidebar with multi-level dropdown example " className="h-full" >
         {/* Botón de alternancia de modo oscuro */}
 
         <Sidebar.Items>
