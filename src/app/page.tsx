@@ -1,12 +1,14 @@
-import Hero from "@/components/hero/Hero";
-import NavbarHero from "@/components/hero/NavbarHero";
-import Image from "next/image";
+"use client"
+import HomeScreen from "./home/HomeScreen";
 
-export default function Home() {
+function Home() {
   return (
-    <main className="h-[100vh]">
-      <NavbarHero />
-      <Hero />
+    <main>
+      {/* <NavbarHero />
+      <Hero /> */}
+      <HomeScreen />
     </main>
   );
 }
+
+export default Home;

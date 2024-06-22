@@ -9,6 +9,8 @@ import Crossword1 from "@/components/chapters/chapter_2/subchapter_1/Crossword1"
 import Crossword2 from "@/components/chapters/chapter_2/subchapter_2/Crossword2";
 import Crossword3 from "@/components/chapters/chapter_2/subchapter_3/Crossword3";
 import VerbToBeQuizz from "@/components/chapters/chapter_3/subchapter_1/VerbToBeQuizz";
+import { Button, Dropdown, Popover } from "flowbite-react";
+import { signOut } from "next-auth/react";
 
 import React, { useState } from "react";
 import {
@@ -21,6 +23,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { FaPersonChalkboard } from "react-icons/fa6";
+import { HiLogout } from "react-icons/hi";
 type OpenMenusState = {
   vocabulario: boolean;
   crucigramas: boolean;
@@ -147,7 +150,8 @@ export default function Navbar() {
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                <FaUser />
+                
+                <FaUser onClick={() => signOut()}/>
               </a>
             </li>
 

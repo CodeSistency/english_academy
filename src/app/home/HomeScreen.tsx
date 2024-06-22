@@ -5,6 +5,7 @@ import { SidebarHome } from "@/components/home/Sidebar";
 import HomeContent from "./HomeContent";
 import Navbar from "@/components/hero/Navbar";
 import Footer from "@/components/hero/Footer";
+import withAuth from "../WithAuth";
 
 function HomeScreen() {
   return (
@@ -29,4 +30,4 @@ function HomeScreen() {
   );
 }
 
-export default HomeScreen;
+export default withAuth(HomeScreen);
