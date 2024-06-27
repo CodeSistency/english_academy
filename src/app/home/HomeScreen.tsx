@@ -18,13 +18,7 @@ function HomeScreen() {
           <HomeContent />
           <Footer />
           </div>
-          
         </div>
-        
-        
-        
-        
-       
       </main>
     </ContextProvider>
   );
